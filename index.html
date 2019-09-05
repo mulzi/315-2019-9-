@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- import CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- import JavaScript -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+
+</head>
+
+<body>
+
+
+    <div id="bodyContent">
+        <div class="headText">
+            <div class="contentBox">
+                <div class="left">
+                    您好，欢迎来到315加盟网！
+                </div>
+                <div class="left">
+                    多打电话，多咨询、实地考察，可降低投资风险
+                </div>
+            </div>
+        </div>
+        <!-- 搜索-->
+        <div class="headSearchBox">
+            <div class="headLogo">
+                <a class="box">
+                    <img src="./img/logo.jpg" alt="">
+                </a>
+            </div>
+            <div class="searchBox">
+                <div class="box">
+                    <form action="">
+                        <input type="text" placeholder="查找商机">
+                        <button>搜商机</button>
+                    </form>
+
+                </div>
+
+            </div>
+            <div class="rightContent">
+
+                <div class="projectBox">
+                    <a href="">
+                        <p class="iconfont icon-fenlei"></p>
+                        <p>项目库</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--搜索-->
+        <!--导航-->
+        <div class="indexHeaderMenu">
+            <div class="box">
+                <div class="left">
+                    <a href="">
+                        <img src="./img/indexHeaderBack.png" alt="">
+                    </a>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li v-for="(item,index) in indexHeaderMenu" :key="item.id">
+                            <a :href="'http//www.' + item.url" :class="isSelect === item.text ? 'active' : ''">
+                                {{item.text}}
+                            </a>
+                            <span class="hot" v-if="item.hot">
+                                <img src="./img/hotImg.png" alt="">
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--导航-->
+
+        <!-- banner 导航 -->
+        <div class="bannerMenu">
+            <div class="leftMenu">
+
+                <div class="box" v-for="(item,index) in bannerLeftMenu" :key="index">
+                    <div class="top">
+                        <i class="iconfont" :class=" item.class">
+                            {{item.title}}
+                        </i>
+                    </div>
+                    <div class="bottomList">
+                        <a v-for="t in item.list" :href="t.url">
+                            {{t.name}}
+                        </a>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="bannerBox">
+                <div class="banner">
+
+                    <el-carousel :interval="5000" arrow="always">
+                        <el-carousel-item v-for="(item,index) in bannerList" :key="index">
+                            <a href="">
+                                <img :src="item.url" alt="">
+                            </a>
+
+                        </el-carousel-item>
+                    </el-carousel>
+
+                </div>
+                <div class="bottomImg">
+                    <a href="">
+                        <img src="./img/5d2bd252a3e5e_380x280.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="rightProject">
+
+                <div class="topChange">
+                    <div class="box">
+                        <span v-for="(item,index) in rankingListText" :key="index"
+                            :class="index == rankingShow ? 'active':''" @click="changeRankingShow(index)">
+                            {{item}}
+                        </span>
+
+                    </div>
+                </div>
+                <div class="listOne" v-if="rankingShow == 0">
+                    <a class="li">
+                        <div class="img">
+                            <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                        </div>
+                        <div class="righttext">
+                            <p>重庆小火锅火锅</p>
+                            <p>金额：<em>10-20万</em> </p>
+                            <p>4分钟前 <em>咨询</em></p>
+                        </div>
+                    </a>
+                    <a href="" class="litwo">
+                        <span>柠檬达人</span>
+                        <em>详</em>
+                        <i>302222</i>
+                    </a>
+                    <a href="" class="litwo">
+                        <span>柠檬达人</span>
+                        <em>详</em>
+                        <i>302222</i>
+                    </a>
+                    <a href="" class="litwo">
+                        <span>柠檬达人</span>
+                        <em>详</em>
+                        <i>302222</i>
+                    </a>
+                    <a href="" class="litwo">
+                        <span>柠檬达人</span>
+                        <em>详</em>
+                        <i>302222</i>
+                    </a>
+                    <a href="" class="litwo">
+                        <span>柠檬达人</span>
+                        <em>详</em>
+                        <i>302222</i>
+                    </a>
+                    <a href="" class="litwo">
+                        <span>柠檬达人</span>
+                        <em>详</em>
+                        <i>302222</i>
+                    </a>
+                    <a href="" class="litwo">
+                        <span>柠檬达人</span>
+                        <em>详</em>
+                        <i>302222</i>
+                    </a>
+                    <a href="" class="litwo">
+                        <span>柠檬达人</span>
+                        <em>详</em>
+                        <i>302222</i>
+                    </a>
+
+                </div>
+                <div class="listOne" v-if="rankingShow == 1">
+                    <a class="li">
+                        <div class="img">
+                            <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                        </div>
+                        <div class="righttext">
+                            <p>重庆小火锅sss火锅</p>
+                            <p>金额：<em>10-20万</em> </p>
+                            <p>4分钟前 <em>咨询</em></p>
+                        </div>
+                    </a>
+                    <a href="" class="litwo">
+                        <span>柠檬达人</span>
+                        <em>详</em>
+                        <i>302222</i>
+                    </a>
+                    <a href="" class="litwo">
+                        <span>柠檬达人</span>
+                        <em>详</em>
+                        <i>302222</i>
+                    </a>
+                    <a href="" class="litwo">
+                        <span>柠檬达人</span>
+                        <em>详</em>
+                        <i>302222</i>
+                    </a>
+                    <a href="" class="litwo">
+                        <span>柠檬达人</span>
+                        <em>详</em>
+                        <i>302222</i>
+                    </a>
+                    <a href="" class="litwo">
+                        <span>柠檬达人</span>
+                        <em>详</em>
+                        <i>302222</i>
+                    </a>
+                    <a href="" class="litwo">
+                        <span>柠檬达人</span>
+                        <em>详</em>
+                        <i>302222</i>
+                    </a>
+                    <a href="" class="litwo">
+                        <span>柠檬达人</span>
+                        <em>详</em>
+                        <i>302222</i>
+                    </a>
+                    <a href="" class="litwo">
+                        <span>柠檬达人</span>
+                        <em>详</em>
+                        <i>302222</i>
+                    </a>
+
+                </div>
+            </div>
+
+
+
+        </div>
+        <!-- banner 导航 -->
+        <!-- 广告长条 -->
+        <div class="advertisement">
+            <a href="">
+                <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+            </a>
+        </div>
+        <!-- 广告长条 -->
+        <!-- 广告长条 -->
+        <div class="advertisement">
+            <a href="">
+                <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+            </a>
+        </div>
+        <!-- 广告长条 -->
+
+        <!-- 优选品牌 -->
+
+        <div class="PreferredBrand">
+            <div class="toptitle">
+                <div class="leftName">
+                    <span>优选品牌</span>
+                </div>
+                <div class="right">
+                    <span>品牌:</span>
+                    <a href="">重庆小火锅</a>
+                    <a href="">重庆小火锅</a>
+                    <a href="">重庆小火锅</a>
+                    <a href="">重庆小火锅</a>
+                    <a href="">重庆小火锅</a>
+                </div>
+            </div>
+            <div class="fourImg">
+                <div class="leftImg four">
+                    <a class="img">
+                        <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                    </a>
+                    <a class="img">
+                        <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                    </a>
+                    <a class="img">
+                        <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                    </a>
+
+                </div>
+                <div class="four right">
+                    <a href="">
+                        <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                    </a>
+                </div>
+                <div class="four right">
+                    <a href="">
+                        <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                    </a>
+                </div>
+                <div class="leftImg four">
+                    <a class="img">
+                        <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                    </a>
+                    <a class="img">
+                        <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                    </a>
+                    <a class="img">
+                        <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                    </a>
+
+                </div>
+            </div>
+            <div class="eightImg">
+                <a href="">
+                    <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                </a>
+                <a href="">
+                    <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                </a>
+                <a href="">
+                    <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                </a>
+                <a href="">
+                    <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                </a>
+                <a href="">
+                    <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                </a>
+                <a href="">
+                    <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                </a>
+                <a href="">
+                    <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                </a>
+                <a href="">
+                    <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                </a>
+            </div>
+        </div>
+
+        <!-- 优选品牌 -->
+
+        <!-- 大牌红包 -->
+        <div class="indexBusiness">
+            <div class="left">
+                <div class="title">
+                    <i class="iconfont icon-hongbao"></i>
+                    <span>大牌红包</span>
+                </div>
+                <div class="boLogo">
+                    <div class="one">
+                        <a href="">
+                            <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                        </a>
+                        <a href="">
+                            <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                        </a>
+                        <a href="">
+                            <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                        </a>
+                        <a href="">
+                            <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="one">
+                        <a href="">
+                            <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                        </a>
+                        <a href="">
+                            <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                        </a>
+                        <a href="">
+                            <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                        </a>
+                        <a href="">
+                            <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="one">
+                        <a href="">
+                            <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                        </a>
+                        <a href="">
+                            <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                        </a>
+                        <a href="">
+                            <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                        </a>
+                        <a href="">
+                            <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="title">
+                    <i class="iconfont icon-rongyu"></i>
+                    <span>优质商机</span>
+                </div>
+                <div class="fourList">
+                    <div class="oneBox">
+                        <div class="topOne">
+                            <a href="">
+                                <p>
+                                    <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                                </p>
+                                <p>
+                                    麦克一千
+                                </p>
+                            </a>
+                        </div>
+                        <div class="fiveList">
+                            <a href="">
+                                大学生创新创业训练大苏打啊飞机公司看
+                            </a>
+                            <a href="">
+                                大学生创新创业训练大苏打啊飞机公司看
+                            </a>
+                            <a href="">
+                                大学生创新创业训练大苏打啊飞机公司看
+                            </a>
+                            <a href="">
+                                大学生创新创业训练大苏打啊飞机公司看
+                            </a>
+                            <a href="">
+                                大学生创新创业训练大苏打啊飞机公司看
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="oneBox">
+                        <div class="topOne">
+                            <a href="">
+                                <p>
+                                    <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                                </p>
+                                <p>
+                                    麦克一千
+                                </p>
+                            </a>
+                        </div>
+                        <div class="fiveList">
+                            <a href="">
+                                大学生创新创业训练大苏打啊飞机公司看
+                            </a>
+                            <a href="">
+                                大学生创新创业训练大苏打啊飞机公司看
+                            </a>
+                            <a href="">
+                                大学生创新创业训练大苏打啊飞机公司看
+                            </a>
+                            <a href="">
+                                大学生创新创业训练大苏打啊飞机公司看
+                            </a>
+                            <a href="">
+                                大学生创新创业训练大苏打啊飞机公司看
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="oneBox">
+                        <div class="topOne">
+                            <a href="">
+                                <p>
+                                    <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                                </p>
+                                <p>
+                                    麦克一千
+                                </p>
+                            </a>
+                        </div>
+                        <div class="fiveList">
+                            <a href="">
+                                大学生创新创业训练大苏打啊飞机公司看
+                            </a>
+                            <a href="">
+                                大学生创新创业训练大苏打啊飞机公司看
+                            </a>
+                            <a href="">
+                                大学生创新创业训练大苏打啊飞机公司看
+                            </a>
+                            <a href="">
+                                大学生创新创业训练大苏打啊飞机公司看
+                            </a>
+                            <a href="">
+                                大学生创新创业训练大苏打啊飞机公司看
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="oneBox">
+                        <div class="topOne">
+                            <a href="">
+                                <p>
+                                    <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                                </p>
+                                <p>
+                                    麦克一千
+                                </p>
+                            </a>
+                        </div>
+                        <div class="fiveList">
+                            <a href="">
+                                大学生创新创业训练大苏打啊飞机公司看
+                            </a>
+                            <a href="">
+                                大学生创新创业训练大苏打啊飞机公司看
+                            </a>
+                            <a href="">
+                                大学生创新创业训练大苏打啊飞机公司看
+                            </a>
+                            <a href="">
+                                大学生创新创业训练大苏打啊飞机公司看
+                            </a>
+                            <a href="">
+                                大学生创新创业训练大苏打啊飞机公司看
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 大牌红包 -->
+
+        <!-- 广告长条 -->
+        <div class="advertisement">
+            <a href="">
+                <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+            </a>
+        </div>
+        <!-- 广告长条 -->
+        <!-- 广告长条 -->
+        <div class="advertisement">
+            <a href="">
+                <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+            </a>
+        </div>
+        <!-- 广告长条 -->
+
+        <!-- 精选项目 -->
+        <div class="PreferredBrand">
+            <div class="toptitle">
+                <div class="leftName">
+                    <span>精选项目</span>
+                </div>
+                <div class="right">
+                    <span>品牌:</span>
+                    <a href="">重庆小火锅</a>
+                    <a href="">重庆小火锅</a>
+                    <a href="">重庆小火锅</a>
+                    <a href="">重庆小火锅</a>
+                    <a href="">重庆小火锅</a>
+                </div>
+            </div>
+            <div class="eightImg">
+                <a href="">
+                    <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                </a>
+                <a href="">
+                    <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                </a>
+                <a href="">
+                    <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                </a>
+                <a href="">
+                    <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                </a>
+                <a href="">
+                    <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                </a>
+                <a href="">
+                    <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                </a>
+                <a href="">
+                    <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                </a>
+                <a href="">
+                    <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                </a>
+                <a href="">
+                    <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                </a>
+                <a href="">
+                    <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                </a>
+                <a href="">
+                    <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                </a>
+                <a href="">
+                    <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                </a>
+                <a href="">
+                    <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                </a>
+                <a href="">
+                    <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                </a>
+                <a href="">
+                    <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                </a>
+                <a href="">
+                    <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- 精选项目 -->
+
+        <!-- 加盟动态 -->
+
+        <div class="JoiningDynamics">
+            <div class="leftOne">
+                <div class="title">
+                    <span>加盟动态</span>
+                </div>
+                <div class="number">
+                    <p>已有 <em>9999</em> 名创业者在线找商机</p>
+                    <p>今日新增意向加盟者 <em>9999</em>人/次</p>
+                </div>
+                <div class="upRunNews">
+                    <p ref="rollul" v-for="(item,index) in newsUpRun" :key="index">
+                        <span>{{item.time}}</span>
+                        <span>o</span>
+                        <span>{{item.name}}</span>
+                        <span>咨询了</span>
+                        <em>{{item.proName}}</em>
+                        <i>[我要咨询]</i>
+                    </p>
+
+                </div>
+            </div>
+            <div class="leftTwo">
+                <div class="title">
+                    <span>猜你喜欢</span>
+                </div>
+                <div class="fiveProBox">
+                    <div class="oneTop">
+                        <a href="">
+                            <p>
+                                重庆老火锅加盟加盟
+                            </p>
+                            <p>
+                                重庆老火锅加盟加盟重庆老火锅加盟加盟重庆老火锅加盟加盟重庆老火锅加盟加盟
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="fourBox">
+                        <a href="">
+                            <div class="img">
+                                <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                            </div>
+                            <p>
+                                火爆全国的老火锅 诚邀您加盟
+                            </p>
+
+                        </a>
+                        <a href="">
+                            <div class="img">
+                                <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                            </div>
+                            <p>
+                                火爆全国的老火锅 诚邀您加盟
+                            </p>
+
+                        </a>
+                        <a href="">
+                            <div class="img">
+                                <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                            </div>
+                            <p>
+                                火爆全国的老火锅 诚邀您加盟
+                            </p>
+
+                        </a>
+                        <a href="">
+                            <div class="img">
+                                <img lazy src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                            </div>
+                            <p>
+                                火爆全国的老火锅 诚邀您加盟
+                            </p>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="leftThree">
+                <div class="title">
+                    <span>最新入驻</span>
+                </div>
+                <div class="eightList">
+                    <a href="">
+                        <div class="leftImg">
+                            <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                        </div>
+                        <div class="rightText">
+                            <p>狗屁火锅</p>
+                            <p>10-100万</p>
+                            <p>查看详情</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="leftImg">
+                            <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                        </div>
+                        <div class="rightText">
+                            <p>狗屁火锅</p>
+                            <p>10-100万</p>
+                            <p>查看详情</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="leftImg">
+                            <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                        </div>
+                        <div class="rightText">
+                            <p>狗屁火锅</p>
+                            <p>10-100万</p>
+                            <p>查看详情</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="leftImg">
+                            <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                        </div>
+                        <div class="rightText">
+                            <p>狗屁火锅</p>
+                            <p>10-100万</p>
+                            <p>查看详情</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="leftImg">
+                            <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                        </div>
+                        <div class="rightText">
+                            <p>狗屁火锅</p>
+                            <p>10-100万</p>
+                            <p>查看详情</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="leftImg">
+                            <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                        </div>
+                        <div class="rightText">
+                            <p>狗屁火锅</p>
+                            <p>10-100万</p>
+                            <p>查看详情</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="leftImg">
+                            <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                        </div>
+                        <div class="rightText">
+                            <p>狗屁火锅</p>
+                            <p>10-100万</p>
+                            <p>查看详情</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="leftImg">
+                            <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+                        </div>
+                        <div class="rightText">
+                            <p>狗屁火锅</p>
+                            <p>10-100万</p>
+                            <p>查看详情</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 加盟动态 -->
+        <!-- 两条广告 -->
+        <div class="advertisementTwo">
+            <a href="">
+                <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+            </a>
+            <a href="">
+                <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+            </a>
+        </div>
+        <!-- 两条广告 -->
+
+        <!-- 三条广告 -->
+        <div class="advertisementThree">
+            <a href="">
+                <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+            </a>
+            <a href="">
+                <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+            </a>
+            <a href="">
+                <img src="./img/5d2c40509cce1_380x280.jpg" alt="">
+            </a>
+        </div>
+        <!-- 三条广告 -->
+
+        <footer>
+            <div class="foot">
+                <div class="top-text">
+                    <div class="one">
+                        <li>
+                            <a href="">
+                                网站首页
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                法律声明
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                服务协议
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                媒体合作
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                广告服务
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                关于我们
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                联系我们
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                投诉删帖
+                            </a>
+                        </li>
+                    </div>
+                    <div class="two">
+                        <p>内容声明:网站信息如涉嫌违反相关法律规定或侵权,请发邮件至17080237949@qq.com删除</p>
+                        <p>
+                            友情提示:创业有风险、投资需谨慎
+                        </p>
+                        <p>
+                            版权所有:美食加盟网
+                        </p>
+                        <div class="img">
+                            <a>
+                                <img src="./img/foot-110.jpg" alt="网络110报警服务" title="网络110报警服务">
+                            </a>
+                            <a>
+                                <img src="./img/foot-kexin.jpg" alt="可信网站" title="可信网站">
+                            </a>
+                            <a>
+                                <img src="./img/foot-icfa.jpg" alt="中国连锁经营行业协会" title="中国连锁经营行业协会">
+                            </a>
+                            <a>
+                                <img src="./img/3.png" alt="诚信保障" title="诚信保障">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="three">
+                        <p>友情链接:</p>
+                        <div class="foot-link">
+                            <li>
+                                <a href="">妈咪香</a>
+                            </li>
+                            <li>
+                                <a href="">妈咪香</a>
+                            </li>
+                            <li>
+                                <a href="">妈咪香</a>
+                            </li>
+                            <li>
+                                <a href="">妈咪香</a>
+                            </li>
+                            <li>
+                                <a href="">妈咪香</a>
+                            </li>
+                            <li>
+                                <a href="">妈咪香</a>
+                            </li>
+                            <li>
+                                <a href="">妈咪香</a>
+                            </li>
+                            <li>
+                                <a href="">妈咪香</a>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="four">
+                        <span>
+                            <img src="./img/5d2bd252a3e5e_380x280.jpg" alt="">
+                        </span>
+                        <span> 扫码关注</span>
+                    </div>
+                </div>
+                <div class="foot-bottom">
+
+                    <p>
+                        <span>
+                            <img src="./img/beian.png" alt="">
+                        </span>
+                        <a>渝公网安备 50010502001221号</a>
+                    </p>
+                    <p>
+                        <span>Copyright©2018, 315sj.cn All Rights Reserved.</span>
+                        <a href="">渝ICP备17011668号-1</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+
+
+
+    <script>
+        new Vue({
+            el: '#bodyContent',
+            data: {
+                isSelect: "重庆火锅",//导航样式选中判断
+                rankingShow: 0,
+                newsUpRun: [ //向上滚动数据
+                    {
+                        time: "2019-05",
+                        name: "李先生",
+                        proName: "重庆老火锅"
+                    },
+                    {
+                        time: "2019-05",
+                        name: "李先生",
+                        proName: "重庆老s火锅"
+                    },
+                    {
+                        time: "2019-05",
+                        name: "李先生",
+                        proName: "重庆老d火锅"
+                    },
+                    {
+                        time: "2019-05",
+                        name: "李先生",
+                        proName: "重庆老f火锅"
+                    },
+                    {
+                        time: "2019-05",
+                        name: "李先生",
+                        proName: "重庆老火f锅"
+                    },
+                    {
+                        time: "2019-05",
+                        name: "李先生",
+                        proName: "重庆老sddsd火锅"
+                    },
+                    {
+                        time: "2019-05",
+                        name: "李先生",
+                        proName: "重庆f老火锅"
+                    },
+                    {
+                        time: "2019-05",
+                        name: "李先生",
+                        proName: "重庆老火锅"
+                    },
+                    {
+                        time: "2019-05",
+                        name: "李先生",
+                        proName: "重庆老gsd火锅"
+                    },
+                    {
+                        time: "2019-05",
+                        name: "李先生",
+                        proName: "重庆老火锅"
+                    },
+                ],
+                rankingListText: ["周排行", "月排行"], //排行榜标题
+                bannerList: [ //banner 图片
+                    {
+                        url: "./img/5d2bd252a3e5e_380x280.jpg"
+                    },
+                    {
+                        url: "./img/5d2bd252a3e5e_380x280.jpg"
+                    },
+                    {
+                        url: "./img/5d2bd252a3e5e_380x280.jpg"
+                    },
+                    {
+                        url: "./img/5d2bd252a3e5e_380x280.jpg"
+                    }
+                ],
+
+                indexHeaderMenu: [ //导航菜单数据
+                    {
+                        id: 111,
+                        url: "sss",
+                        text: "重庆火锅",
+                        hot: false
+                    },
+                    {
+                        id: 1121,
+                        url: "sss",
+                        text: "重庆小面",
+                        hot: false
+                    },
+                    {
+                        id: 1321,
+                        url: "sss",
+                        text: "网红街饮",
+                        hot: true
+                    },
+                    {
+                        id: 211,
+                        url: "sss",
+                        text: "无故杂粮",
+                        hot: true
+                    },
+                    {
+                        id: 311,
+                        url: "sss",
+                        text: "重庆火锅",
+                        hot: false
+                    },
+                    {
+                        id: 1311,
+                        url: "sss",
+                        text: "重庆火锅",
+                        hot: false
+                    },
+                    {
+                        id: 141,
+                        url: "sss",
+                        text: "重庆火锅",
+                        hot: false
+                    },
+                    {
+                        id: 151,
+                        url: "sss",
+                        text: "重庆火锅",
+                        hot: false
+                    },
+                    {
+                        id: 161,
+                        url: "sss",
+                        text: "重庆火锅",
+                        hot: false
+                    },
+                ],
+                bannerLeftMenu: [ //banner右边菜单导航数据
+                    {
+                        class: "icon-shu",
+                        title: "特色",
+                        list: [{
+                                id: 1,
+                                name: "火锅",
+                                url: 'dasad'
+                            },
+                            {
+                                id: 1,
+                                name: "小吃",
+                                url: 'dasad'
+
+                            },
+                            {
+                                id: 1,
+                                name: "茶饮",
+                                url: 'dasad'
+                            },
+                            {
+                                id: 1,
+                                name: "面馆",
+                                url: 'dasad'
+                            },
+                            {
+                                id: 1,
+                                name: "中餐",
+                                url: 'dasad'
+                            },
+                            {
+                                id: 1,
+                                name: "排骨饭",
+                                url: 'dasad'
+                            },
+
+
+                        ]
+
+                    },
+                    {
+                        class: "icon-jiulei",
+                        title: "休闲",
+                        list: [{
+                                id: 1,
+                                name: "火锅",
+                                url: 'dasad'
+                            },
+                            {
+                                id: 1,
+                                name: "小吃",
+                                url: 'dasad'
+
+                            },
+                            {
+                                id: 1,
+                                name: "茶饮",
+                                url: 'dasad'
+                            },
+                            {
+                                id: 1,
+                                name: "面馆",
+                                url: 'dasad'
+                            },
+                            {
+                                id: 1,
+                                name: "中餐",
+                                url: 'dasad'
+                            },
+                            {
+                                id: 1,
+                                name: "排骨饭",
+                                url: 'dasad'
+                            },
+
+
+                        ]
+
+                    },
+                    {
+                        class: "icon-jine",
+                        title: "金额",
+                        list: [{
+                                id: 1,
+                                name: "一万以下",
+                                url: 'dasad'
+                            },
+                            {
+                                id: 1,
+                                name: "1-3万",
+                                url: 'dasad'
+
+                            },
+                            {
+                                id: 1,
+                                name: "10-100万",
+                                url: 'dasad'
+                            },
+                            {
+                                id: 1,
+                                name: "面馆",
+                                url: 'dasad'
+                            },
+                            {
+                                id: 1,
+                                name: "中餐",
+                                url: 'dasad'
+                            },
+                            {
+                                id: 1,
+                                name: "排骨饭",
+                                url: 'dasad'
+                            },
+
+
+                        ]
+
+                    },
+                    {
+                        class: "icon-diqu",
+                        title: "地区",
+                        list: [{
+                                id: 1,
+                                name: "重庆",
+                                url: 'dasad'
+                            },
+                            {
+                                id: 1,
+                                name: "北京",
+                                url: 'dasad'
+
+                            },
+                            {
+                                id: 1,
+                                name: "山西",
+                                url: 'dasad'
+                            },
+                            {
+                                id: 1,
+                                name: "面馆",
+                                url: 'dasad'
+                            },
+                            {
+                                id: 1,
+                                name: "中餐",
+                                url: 'dasad'
+                            },
+                            {
+                                id: 1,
+                                name: "排骨饭",
+                                url: 'dasad'
+                            },
+
+
+                        ]
+
+                    }
+                ]
+            },
+            methods: {
+                changeRankingShow(index) {
+                    this.rankingShow = index;
+
+                },
+
+                scroll() { //咨询向上滚动
+
+                    var p = $(".upRunNews>p:eq(0)").clone();
+
+                    //使用animate对li的外边距进行调整从而达到向上滚动的效果
+                    $(".upRunNews>p:eq(0)").animate({
+                            marginTop: "-24px"
+                        }, 2000,
+                        function () {
+                            //对已经消失的li进行删除
+                            $(".upRunNews>p:eq(0)").remove();
+
+                            //把复制后的li插入到最后
+                            $(".upRunNews").append(p);
+
+                        })
+                }
+            },
+
+            created() {
+                setInterval(this.scroll, 2500)
+            },
+        })
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b89ecfb6-4280-48a0-8d1d-77a177349afb" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/315-2019-9-.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/iconfont.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/index.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/5d2bd252a3e5e_380x280.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/5d2c40509cce1_380x280.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/bannerBackground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/hotImg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/indexHeaderBack.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="315-2019-9-" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1QJBRE2A5sZMv7dLygQq3IZYNWi" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="添加" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\进行中的项目\2019年项目\9月项目\315-2019-9-\img" />
+      <recent name="F:\进行中的项目\2019年项目\9月项目\315-2019-9-\css" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b89ecfb6-4280-48a0-8d1d-77a177349afb" name="默认更改列表" comment="" />
+      <created>1567478808274</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1567478808274</updated>
+      <workItem from="1567478809591" duration="20042000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

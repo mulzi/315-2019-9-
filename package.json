@@ -1,0 +1,22 @@
+{
+  "name": "315-2019-9-",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mulzi/315-2019-9-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mulzi/315-2019-9-/issues"
+  },
+  "homepage": "https://github.com/mulzi/315-2019-9-#readme",
+  "dependencies": {
+    "element-ui": "^2.12.0"
+  }
+}

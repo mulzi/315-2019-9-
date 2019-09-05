@@ -1,0 +1,1428 @@
+@import "iconfont.css";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-style: normal;
+}
+.headText {
+  width: 100%;
+  background: #f2f2f2;
+}
+.headText .contentBox {
+  width: 1200px;
+  margin: 0 auto;
+  height: 30px;
+  line-height: 30px;
+  display: flex;
+}
+.headText .contentBox .left {
+  flex: 1;
+  color: #333333;
+  text-indent: 2em;
+  font-size: 12px;
+}
+.headSearchBox {
+  width: 1200px;
+  margin: 16px auto;
+  overflow: hidden;
+}
+.headSearchBox .headLogo {
+  width: 300px;
+  float: left;
+}
+.headSearchBox .headLogo .box {
+  display: block;
+  width: 218px;
+  height: 64px;
+}
+.headSearchBox .headLogo .box img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.headSearchBox .searchBox {
+  width: 600px;
+  float: left;
+}
+.headSearchBox .searchBox .box {
+  width: 440px;
+  margin: 10px auto;
+  border: 4px solid #f2f2f2;
+  box-sizing: border-box;
+  height: 40px;
+}
+.headSearchBox .searchBox .box form {
+  display: flex;
+  width: 100%;
+}
+.headSearchBox .searchBox .box form input {
+  display: block;
+  flex: 1;
+  outline: none;
+  background: transparent;
+  border: none;
+  height: 32px;
+  line-height: 32px;
+  text-indent: 1em;
+  color: #333333;
+  font-size: 16px;
+}
+.headSearchBox .searchBox .box form button {
+  width: 80px;
+  height: 32px;
+  line-height: 32px;
+  background: #c60000;
+  border: none;
+  color: #f2f2f2;
+  font-size: 14px;
+  outline: none;
+}
+.headSearchBox .rightContent {
+  width: 300px;
+  float: left;
+  margin-top: 10px;
+  display: flex;
+}
+.headSearchBox .rightContent .projectBox {
+  flex: 1;
+}
+.headSearchBox .rightContent .projectBox a {
+  width: 90px;
+  display: block;
+}
+.headSearchBox .rightContent .projectBox a p:nth-child(1) {
+  font-size: 30px;
+  color: red;
+  text-align: center;
+}
+.headSearchBox .rightContent .projectBox a p:nth-child(2) {
+  font-size: 13px;
+  color: #333333;
+  text-align: center;
+}
+.indexHeaderMenu {
+  width: 100%;
+  height: 44px;
+  background: #c60000;
+  border-bottom: 4px solid #f2f2f2;
+}
+.indexHeaderMenu .box {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+.indexHeaderMenu .box .left {
+  width: 280px;
+  height: 48px;
+}
+.indexHeaderMenu .box .left a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.indexHeaderMenu .box .left a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.indexHeaderMenu .box .right {
+  flex: 1;
+}
+.indexHeaderMenu .box .right ul {
+  width: 100%;
+  display: flex;
+}
+.indexHeaderMenu .box .right ul li {
+  flex: 1;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  border-right: 2px solid #b30000;
+  position: relative;
+}
+.indexHeaderMenu .box .right ul li a {
+  color: #ffffff;
+  font-size: 15px;
+  display: block;
+}
+.indexHeaderMenu .box .right ul li a:hover {
+  background: #b90000;
+}
+.indexHeaderMenu .box .right ul li a.active {
+  background: #b30000;
+}
+.indexHeaderMenu .box .right ul li .hot {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.bannerMenu {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.bannerMenu .leftMenu {
+  float: left;
+  width: 270px;
+  margin-left: 5px;
+  border: 1px solid #f2f2f2;
+  border-top: none;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.bannerMenu .leftMenu .box {
+  width: 94%;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.bannerMenu .leftMenu .box:last-child {
+  border-bottom: none;
+}
+.bannerMenu .leftMenu .box .top {
+  width: 100%;
+  margin: 10px auto;
+}
+.bannerMenu .leftMenu .box .top i {
+  font-size: 18px;
+  color: red;
+  height: 24px;
+  line-height: 24px;
+}
+.bannerMenu .leftMenu .box .bottomList {
+  width: 100%;
+  overflow: hidden;
+  height: 70px;
+}
+.bannerMenu .leftMenu .box .bottomList a {
+  display: block;
+  float: left;
+  width: 25%;
+  text-align: center;
+  margin: 0 0 8px 0;
+  height: 24px;
+  line-height: 24px;
+  color: #333333;
+  font-size: 14px;
+  overflow: hidden;
+}
+.bannerMenu .leftMenu .box .bottomList a:hover {
+  color: red;
+}
+.bannerMenu .bannerBox {
+  float: left;
+  width: 640px;
+  height: 450px;
+  background: url("../img/bannerBackground.png") no-repeat;
+  background-size: 100% 100%;
+  margin: 10px 0 0 10px;
+}
+.bannerMenu .bannerBox .banner {
+  margin: 10px;
+  width: 620px;
+  height: 300px;
+}
+.bannerMenu .bannerBox .banner .el-carousel {
+  width: 100%;
+  height: 100%;
+}
+.bannerMenu .bannerBox .banner .el-carousel .el-carousel__container {
+  width: 100%;
+}
+.bannerMenu .bannerBox .banner .el-carousel .el-carousel__container .el-carousel__item {
+  width: 100%;
+  height: 100%;
+}
+.bannerMenu .bannerBox .banner .el-carousel .el-carousel__container .el-carousel__item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.bannerMenu .bannerBox .banner .el-carousel .el-carousel__container .el-carousel__item a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.bannerMenu .bannerBox .bottomImg {
+  margin-left: 10px;
+  width: 620px;
+  height: 120px;
+}
+.bannerMenu .bannerBox .bottomImg a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.bannerMenu .bannerBox .bottomImg a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.bannerMenu .rightProject {
+  width: 260px;
+  float: left;
+  height: 450px;
+  margin-top: 10px;
+  margin-left: 10px;
+  overflow: hidden;
+}
+.bannerMenu .rightProject .topChange {
+  width: 100%;
+}
+.bannerMenu .rightProject .topChange .box {
+  font-size: 0;
+}
+.bannerMenu .rightProject .topChange .box span {
+  display: inline-block;
+  background: #cccccc;
+  font-size: 12px;
+  color: #333333;
+  padding: 2px 12px;
+  cursor: pointer;
+}
+.bannerMenu .rightProject .topChange .box span.active {
+  background: #b30000;
+  color: #ffffff;
+}
+.bannerMenu .rightProject .listOne {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  overflow: hidden;
+}
+.bannerMenu .rightProject .listOne .li {
+  display: block;
+  overflow: hidden;
+}
+.bannerMenu .rightProject .listOne .li::before {
+  display: block;
+  content: "1";
+  width: 18px;
+  height: 18px;
+  background: #ff0000;
+  color: #ffffff;
+  float: left;
+  line-height: 18px;
+  font-size: 12px;
+  text-align: center;
+}
+.bannerMenu .rightProject .listOne .li .img {
+  width: 100px;
+  height: 60px;
+  float: left;
+}
+.bannerMenu .rightProject .listOne .li .img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.bannerMenu .rightProject .listOne .li .righttext {
+  width: 132px;
+  margin-left: 10px;
+  float: left;
+  height: 60px;
+}
+.bannerMenu .rightProject .listOne .li .righttext p {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+}
+.bannerMenu .rightProject .listOne .li .righttext p:nth-child(1) {
+  color: #666666;
+}
+.bannerMenu .rightProject .listOne .li .righttext p:nth-child(2) {
+  color: #666666;
+}
+.bannerMenu .rightProject .listOne .li .righttext p:nth-child(2) em {
+  color: red;
+}
+.bannerMenu .rightProject .listOne .li .righttext p:nth-child(3) {
+  color: #999999;
+}
+.bannerMenu .rightProject .listOne .li .righttext p:nth-child(3) em {
+  background: red;
+  color: #ffffff;
+  padding: 0 8px;
+}
+.bannerMenu .rightProject .listOne .litwo {
+  width: 94%;
+  margin: 25px auto;
+  overflow: hidden;
+  display: block;
+}
+.bannerMenu .rightProject .listOne .litwo::before {
+  content: "02/";
+  display: block;
+  color: #d40404;
+  font-size: 14px;
+  height: 20px;
+  line-height: 20px;
+  float: left;
+  width: 40px;
+}
+.bannerMenu .rightProject .listOne .litwo::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.bannerMenu .rightProject .listOne .litwo span {
+  width: 120px;
+  float: left;
+  display: block;
+  font-size: 13px;
+  color: #666666;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.bannerMenu .rightProject .listOne .litwo span:hover {
+  color: red;
+}
+.bannerMenu .rightProject .listOne .litwo em {
+  width: 14px;
+  height: 14px;
+  line-height: 14px;
+  text-align: center;
+  border: 1px solid #999999;
+  background: linear-gradient(180deg, #ffffff, #a5a5a5);
+  display: block;
+  float: left;
+  font-size: 12px;
+  color: #333333;
+  margin-left: 6px;
+}
+.bannerMenu .rightProject .listOne .litwo i {
+  font-size: 12px;
+  float: left;
+  display: block;
+  margin-left: 4px;
+  color: #333333;
+}
+.bannerMenu .rightProject .listOne .litwo:nth-child(3)::before {
+  content: "03/";
+}
+.bannerMenu .rightProject .listOne .litwo:nth-child(4)::before {
+  content: "04/";
+}
+.bannerMenu .rightProject .listOne .litwo:nth-child(5)::before {
+  content: "05/";
+}
+.bannerMenu .rightProject .listOne .litwo:nth-child(6)::before {
+  content: "06/";
+}
+.bannerMenu .rightProject .listOne .litwo:nth-child(7)::before {
+  content: "07/";
+}
+.bannerMenu .rightProject .listOne .litwo:nth-child(8)::before {
+  content: "08/";
+}
+.bannerMenu .rightProject .listOne .litwo:nth-child(9)::before {
+  content: "09/";
+}
+.advertisement {
+  width: 1200px;
+  margin: 8px auto 0;
+  height: 80px;
+}
+.advertisement a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.advertisement a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.advertisementTwo {
+  width: 1200px;
+  margin: 8px auto 0;
+  height: 80px;
+  overflow: hidden;
+}
+.advertisementTwo a {
+  float: left;
+  width: 595px;
+  height: 80px;
+}
+.advertisementTwo a:nth-child(1) {
+  margin-right: 10px;
+}
+.advertisementTwo a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.advertisementThree {
+  width: 1200px;
+  margin: 8px auto 0;
+  height: 80px;
+}
+.advertisementThree a {
+  height: 80px;
+  float: left;
+  width: 392.33333333px;
+}
+.advertisementThree a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.advertisementThree a:nth-child(1) {
+  margin-right: 10px;
+}
+.advertisementThree a:nth-child(2) {
+  margin-right: 10px;
+}
+.PreferredBrand {
+  width: 1200px;
+  margin: 16px auto 0;
+  overflow: hidden;
+}
+.PreferredBrand .toptitle {
+  border-bottom: 1px solid #a5a5a5;
+  display: flex;
+}
+.PreferredBrand .toptitle .leftName {
+  padding: 0 3px;
+  position: relative;
+}
+.PreferredBrand .toptitle .leftName span {
+  font-size: 16px;
+  color: #333333;
+  display: block;
+  height: 32px;
+  line-height: 32px;
+}
+.PreferredBrand .toptitle .leftName::before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: red;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.PreferredBrand .toptitle .right {
+  flex: 1;
+  text-align: right;
+}
+.PreferredBrand .toptitle .right span {
+  display: inline-block;
+  color: #999999;
+  font-size: 13px;
+  height: 32px;
+  line-height: 32px;
+  margin: 0 4px;
+}
+.PreferredBrand .toptitle .right a {
+  display: inline-block;
+  font-size: 13px;
+  height: 32px;
+  line-height: 32px;
+  margin: 0 8px;
+  color: #414141;
+}
+.PreferredBrand .toptitle .right a:hover {
+  color: red;
+}
+.PreferredBrand .fourImg {
+  width: 100%;
+  margin-top: 14px;
+  overflow: hidden;
+}
+.PreferredBrand .fourImg .four {
+  width: 292px;
+  float: left;
+  height: 260px;
+  margin-right: 10px;
+}
+.PreferredBrand .fourImg .four:last-child {
+  margin-right: 0;
+}
+.PreferredBrand .fourImg .leftImg .img {
+  width: 100%;
+  display: block;
+  height: 80px;
+  margin-bottom: 10px;
+}
+.PreferredBrand .fourImg .leftImg .img:last-child {
+  margin-bottom: 0;
+}
+.PreferredBrand .fourImg .leftImg .img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.PreferredBrand .fourImg .right {
+  height: 260px;
+}
+.PreferredBrand .fourImg .right a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.PreferredBrand .fourImg .right a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.PreferredBrand .eightImg {
+  width: 100%;
+  margin-top: 12px;
+  overflow: hidden;
+}
+.PreferredBrand .eightImg a {
+  display: block;
+  width: 141px;
+  float: left;
+  height: 80px;
+  overflow: hidden;
+  margin-right: 10px;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+}
+.PreferredBrand .eightImg a:nth-child(8n) {
+  margin-right: 0;
+}
+.PreferredBrand .eightImg a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.PreferredBrand .eightImg a img:hover {
+  transform: scale(1.05);
+  transition: 0.2s ease-in-out;
+}
+.indexBusiness {
+  width: 1200px;
+  margin: 8px auto 0;
+  overflow: hidden;
+}
+.indexBusiness .left {
+  width: 500px;
+  float: left;
+}
+.indexBusiness .left .title {
+  width: 100%;
+}
+.indexBusiness .left .title i {
+  font-size: 18px;
+  color: red;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+}
+.indexBusiness .left .title span {
+  font-size: 16px;
+  color: #333333;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+}
+.indexBusiness .left .boLogo {
+  width: 100%;
+}
+.indexBusiness .left .boLogo .one {
+  width: 100%;
+  overflow: hidden;
+}
+.indexBusiness .left .boLogo .one a {
+  float: left;
+  width: 25%;
+  height: 88px;
+  box-sizing: border-box;
+}
+.indexBusiness .left .boLogo .one a:nth-child(odd) {
+  border-left: solid 1px #e7e7e7;
+  border-right: solid 1px #e7e7e7;
+  border-top: solid 1px #e7e7e7;
+}
+.indexBusiness .left .boLogo .one a:nth-child(even) {
+  border-top: solid 1px #e7e7e7;
+}
+.indexBusiness .left .boLogo .one a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.indexBusiness .left .boLogo .one:last-child .one {
+  border-bottom: solid 1px #e7e7e7;
+}
+.indexBusiness .right {
+  width: 680px;
+  float: left;
+  margin-left: 20px;
+}
+.indexBusiness .right .title {
+  width: 100%;
+  line-height: 30px;
+}
+.indexBusiness .right .title i {
+  font-size: 30px;
+  color: red;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.indexBusiness .right .title span {
+  font-size: 16px;
+  color: #333333;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.indexBusiness .right .fourList {
+  width: 100%;
+  overflow: hidden;
+}
+.indexBusiness .right .fourList .oneBox {
+  width: 160px;
+  margin-right: 13.33333333px;
+  float: left;
+}
+.indexBusiness .right .fourList .oneBox:last-child {
+  margin-right: 0;
+}
+.indexBusiness .right .fourList .oneBox .topOne a {
+  display: block;
+  width: 100%;
+}
+.indexBusiness .right .fourList .oneBox .topOne a p:nth-child(1) {
+  width: 100%;
+  height: 100px;
+}
+.indexBusiness .right .fourList .oneBox .topOne a p:nth-child(1) img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.indexBusiness .right .fourList .oneBox .topOne a p:nth-child(2) {
+  font-size: 13px;
+  font-weight: bold;
+  color: #333333;
+  text-align: center;
+  height: 24px;
+  line-height: 24px;
+}
+.indexBusiness .right .fourList .oneBox .fiveList {
+  width: 100%;
+  margin: 10px auto 0;
+}
+.indexBusiness .right .fourList .oneBox .fiveList a {
+  display: block;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  color: #333333;
+  text-align: center;
+  margin: 8px 0;
+}
+.JoiningDynamics {
+  width: 1200px;
+  margin: 10px auto 0;
+  overflow: hidden;
+}
+.JoiningDynamics .leftOne {
+  float: left;
+  width: 390px;
+  border: 1px solid #dbdbdb;
+  box-sizing: border-box;
+}
+.JoiningDynamics .leftOne .title {
+  width: 94%;
+  margin: 10px auto 0;
+  border-bottom: solid 1px #b9b9b9;
+}
+.JoiningDynamics .leftOne .title span {
+  padding: 0 2px;
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+  font-size: 16px;
+  color: #333333;
+  position: relative;
+}
+.JoiningDynamics .leftOne .title span::before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: red;
+}
+.JoiningDynamics .leftOne .number {
+  width: 94%;
+  margin: 0 auto;
+  background: #ebebeb;
+  overflow: hidden;
+}
+.JoiningDynamics .leftOne .number p {
+  margin: 8px auto;
+  width: 94%;
+  color: #999999;
+  font-size: 15px;
+}
+.JoiningDynamics .leftOne .number p em {
+  color: red;
+}
+.JoiningDynamics .leftOne .upRunNews {
+  height: 240px;
+  width: 94%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.JoiningDynamics .leftOne .upRunNews::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background: #cecece;
+  left: 60px;
+}
+.JoiningDynamics .leftOne .upRunNews p {
+  height: 24px;
+  line-height: 24px;
+  font-size: 12px;
+  color: #414141;
+  margin: 10px 0;
+}
+.JoiningDynamics .leftOne .upRunNews p span {
+  vertical-align: middle;
+  display: inline-block;
+}
+.JoiningDynamics .leftOne .upRunNews p span:nth-child(1) {
+  color: #999999;
+}
+.JoiningDynamics .leftOne .upRunNews p span:nth-child(2) {
+  color: #999999;
+  margin: 0 6px;
+}
+.JoiningDynamics .leftOne .upRunNews p span:nth-child(3) {
+  color: #333333;
+  margin: 0 6px;
+}
+.JoiningDynamics .leftOne .upRunNews p em {
+  color: red;
+  vertical-align: middle;
+  width: 130px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline-block;
+}
+.JoiningDynamics .leftOne .upRunNews p i {
+  color: #999999;
+  text-align: right;
+  vertical-align: middle;
+  display: inline-block;
+}
+.JoiningDynamics .leftTwo {
+  margin: 0 10px;
+  width: 400px;
+  float: left;
+  width: 390px;
+  border: 1px solid #dbdbdb;
+  box-sizing: border-box;
+}
+.JoiningDynamics .leftTwo .title {
+  width: 94%;
+  margin: 10px auto 0;
+  border-bottom: solid 1px #b9b9b9;
+}
+.JoiningDynamics .leftTwo .title span {
+  padding: 0 2px;
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+  font-size: 16px;
+  color: #333333;
+  position: relative;
+}
+.JoiningDynamics .leftTwo .title span::before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: red;
+}
+.JoiningDynamics .leftTwo .fiveProBox {
+  width: 94%;
+  margin: 14px auto 0;
+}
+.JoiningDynamics .leftTwo .fiveProBox .oneTop {
+  width: 100%;
+}
+.JoiningDynamics .leftTwo .fiveProBox .oneTop a {
+  display: block;
+}
+.JoiningDynamics .leftTwo .fiveProBox .oneTop a p {
+  text-align: center;
+  height: 20px;
+  font-size: 12px;
+  line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #9c9c9c;
+}
+.JoiningDynamics .leftTwo .fiveProBox .oneTop a p:nth-child(1) {
+  color: #333333;
+  font-size: 15px;
+  font-weight: bold;
+}
+.JoiningDynamics .leftTwo .fiveProBox .fourBox {
+  overflow: hidden;
+  margin-top: 10px;
+  width: 100%;
+}
+.JoiningDynamics .leftTwo .fiveProBox .fourBox a {
+  float: left;
+  width: 48%;
+  display: block;
+  margin-bottom: 10px;
+}
+.JoiningDynamics .leftTwo .fiveProBox .fourBox a:nth-child(odd) {
+  margin-right: 4%;
+}
+.JoiningDynamics .leftTwo .fiveProBox .fourBox a .img {
+  height: 90px;
+  width: 100%;
+  overflow: hidden;
+}
+.JoiningDynamics .leftTwo .fiveProBox .fourBox a .img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.JoiningDynamics .leftTwo .fiveProBox .fourBox a .img img:hover {
+  transform: scale(1.05);
+  transition: 0.2s ease-in-out;
+}
+.JoiningDynamics .leftTwo .fiveProBox .fourBox a p {
+  height: 20px;
+  line-height: 20px;
+  color: #414141;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.JoiningDynamics .leftThree {
+  float: left;
+  width: 390px;
+  border: 1px solid #dbdbdb;
+  box-sizing: border-box;
+}
+.JoiningDynamics .leftThree .title {
+  width: 94%;
+  margin: 10px auto 0;
+  border-bottom: solid 1px #b9b9b9;
+}
+.JoiningDynamics .leftThree .title span {
+  padding: 0 2px;
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+  font-size: 16px;
+  color: #333333;
+  position: relative;
+}
+.JoiningDynamics .leftThree .title span::before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: red;
+}
+.JoiningDynamics .leftThree .eightList {
+  width: 94%;
+  margin: 10px auto 0;
+  overflow: hidden;
+}
+.JoiningDynamics .leftThree .eightList a {
+  display: flex;
+  float: left;
+  width: 48%;
+  margin-bottom: 12px;
+}
+.JoiningDynamics .leftThree .eightList a:nth-child(odd) {
+  margin-right: 4%;
+}
+.JoiningDynamics .leftThree .eightList a .leftImg {
+  width: 70px;
+  height: 60px;
+  overflow: hidden;
+}
+.JoiningDynamics .leftThree .eightList a .leftImg img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.JoiningDynamics .leftThree .eightList a .leftImg img:hover {
+  transform: scale(1.05);
+  transition: 0.2s ease-in-out;
+}
+.JoiningDynamics .leftThree .eightList a .rightText {
+  flex: 1;
+  margin-left: 6px;
+  overflow: hidden;
+}
+.JoiningDynamics .leftThree .eightList a .rightText p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.JoiningDynamics .leftThree .eightList a .rightText p:nth-child(1) {
+  color: #333333;
+  font-size: 12px;
+  height: 20px;
+  line-height: 20px;
+  font-weight: bold;
+}
+.JoiningDynamics .leftThree .eightList a .rightText p:nth-child(2) {
+  height: 20px;
+  line-height: 20px;
+  color: red;
+  font-size: 12px;
+}
+.JoiningDynamics .leftThree .eightList a .rightText p:nth-child(3) {
+  border: 1px solid #d1d1d1;
+  color: #999999;
+  font-size: 12px;
+  padding: 0 4px;
+  display: inline-block;
+}
+.JoiningDynamics .leftThree .eightList a .rightText p:nth-child(3):hover {
+  background: #a5a5a5;
+  color: #ffffff;
+}
+footer {
+  width: 100%;
+  background-color: #f6f6f6;
+  overflow: hidden;
+  margin-top: 80px;
+}
+footer .foot {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+footer .foot .top-text {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+footer .foot .top-text .one {
+  width: 220px;
+  float: left;
+  margin-right: 40px;
+}
+footer .foot .top-text .one li {
+  width: 50%;
+  float: left;
+  margin-bottom: 12px;
+}
+footer .foot .top-text .one li a {
+  color: #969696;
+  font-size: 16px;
+}
+footer .foot .top-text .one li a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+footer .foot .top-text .two {
+  width: 500px;
+  margin-right: 40px;
+  float: left;
+}
+footer .foot .top-text .two p {
+  color: #969696;
+  font-size: 13px;
+  width: 500px;
+  margin-bottom: 12px;
+}
+footer .foot .top-text .two p:nth-child(1) {
+  margin-top: 6px;
+}
+footer .foot .top-text .two .img {
+  width: 100%;
+  margin-top: 24px;
+  overflow: hidden;
+}
+footer .foot .top-text .two .img a {
+  width: 100px;
+  height: 40px;
+  display: block;
+  float: left;
+  margin-right: 24px;
+  overflow: hidden;
+}
+footer .foot .top-text .two .img a img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: all 0.3s linear;
+}
+footer .foot .top-text .two .img a img:hover {
+  transform: scale(1.1);
+  transition: all 0.3s linear;
+}
+footer .foot .top-text .three {
+  width: 270px;
+  float: left;
+  margin-right: 30px;
+}
+footer .foot .top-text .three > p {
+  color: #969696;
+  font-size: 18px;
+  width: 100%;
+}
+footer .foot .top-text .three .foot-link {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 10px;
+}
+footer .foot .top-text .three .foot-link li {
+  float: left;
+  max-height: 20px;
+  margin-bottom: 14px;
+  margin-right: 20px;
+}
+footer .foot .top-text .three .foot-link li a {
+  color: #969696;
+  font-size: 15px;
+}
+footer .foot .top-text .three .foot-link li a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+footer .foot .top-text .four {
+  width: 100px;
+  float: left;
+}
+footer .foot .top-text .four span {
+  display: block;
+}
+footer .foot .top-text .four span:nth-child(1) {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+footer .foot .top-text .four span:nth-child(1) img {
+  width: 100%;
+  height: 100%;
+}
+footer .foot .top-text .four span:nth-child(2) {
+  width: 100px;
+  color: #969696;
+  font-size: 14px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+footer .foot .foot-bottom {
+  width: 100%;
+  margin: 0 auto;
+}
+footer .foot .foot-bottom p:nth-child(1) {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+  line-height: 24px;
+}
+footer .foot .foot-bottom p:nth-child(1) span {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+}
+footer .foot .foot-bottom p:nth-child(1) span img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+footer .foot .foot-bottom p:nth-child(1) a {
+  color: #999;
+  vertical-align: middle;
+}
+footer .foot .foot-bottom p:nth-child(1) a:hover {
+  color: #e20612;
+}
+footer .foot .foot-bottom p:nth-child(2) {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 18px;
+}
+footer .foot .foot-bottom p:nth-child(2) span {
+  vertical-align: middle;
+  color: #969696;
+}
+footer .foot .foot-bottom p:nth-child(2) a {
+  color: #969696;
+  vertical-align: middle;
+}
+footer .foot .foot-bottom p:nth-child(2) a:hover {
+  color: #e20612;
+}
+.active_bread_menu {
+  width: 1200px;
+  height: 38px;
+  font-size: 14px;
+  color: #5b5b5b;
+  background-color: #f2f2f2;
+  line-height: 38px;
+  overflow: hidden;
+  border-radius: 2px;
+  margin: 16px auto;
+}
+.active_bread_menu span:nth-child(1) {
+  margin-left: 18px;
+}
+.active_bread_menu a {
+  color: #5b5b5b;
+}
+.active_bread_menu a:hover {
+  color: #b90000;
+}
+.ProjectTopMenu {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.ProjectTopMenu .menuBox {
+  width: 100%;
+  display: flex;
+  border: 1px solid #f1f1f1;
+  box-sizing: border-box;
+  border-bottom-color: transparent;
+}
+.ProjectTopMenu .menuBox:last-child {
+  border-bottom-color: #f1f1f1;
+}
+.ProjectTopMenu .menuBox .leftMenu {
+  width: 110px;
+  line-height: 42px;
+  font-size: 16px;
+  text-indent: 1em;
+  background: #fbfbfb;
+}
+.ProjectTopMenu .menuBox .rightMenu {
+  flex: 1;
+}
+.ProjectTopMenu .menuBox .rightMenu ul {
+  width: 100%;
+  font-size: 0;
+}
+.ProjectTopMenu .menuBox .rightMenu ul li {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 0 8px;
+  font-size: 14px;
+  color: #333;
+  line-height: 30px;
+  height: 30px;
+  margin-top: 6px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+.ProjectTopMenu .menuBox .rightMenu ul li a {
+  color: #333333;
+}
+.ProjectTopMenu .menuBox .rightMenu ul li:hover {
+  border: solid 1px #fd6a6a;
+  color: #fd6a6a;
+}
+.ProjectTopMenu .menuBox .rightMenu ul li:hover a {
+  color: #fd6a6a;
+}
+.ProjectTopMenu .menuBox .rightMenu ul li.active {
+  border: solid 1px #fd6a6a;
+  color: #fd6a6a;
+}
+.ProjectTopMenu .menuBox .rightMenu ul li.active a {
+  color: #fd6a6a;
+}
+.ProjectTopMenu .menuBox .clickButton {
+  width: 100px;
+  text-align: center;
+  height: 42px;
+  line-height: 42px;
+  color: #475c94;
+  font-size: 14px;
+  cursor: pointer;
+}
+.ProjectTopMenu .height {
+  height: 44px;
+  overflow: hidden;
+}
+.bottomListBox {
+  margin: 30px 0;
+  width: 100%;
+  background: #f3f3f3;
+  overflow: hidden;
+}
+.bottomListBox .boxList {
+  width: 1200px;
+  margin: 30px auto;
+}
+.bottomListBox .boxList::after {
+  content: "";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+.bottomListBox .boxList a {
+  float: left;
+  margin: 0 10px 16px 0;
+  width: 292px;
+  display: block;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+.bottomListBox .boxList a:hover {
+  box-shadow: 2px 3px 18px #c4c4c4;
+}
+.bottomListBox .boxList a:nth-child(4n) {
+  margin-right: 0;
+}
+.bottomListBox .boxList a .Nbox {
+  width: 272px;
+  margin: 10px ;
+}
+.bottomListBox .boxList a .Nbox p {
+  width: 100%;
+}
+.bottomListBox .boxList a .Nbox p:nth-child(1) {
+  height: 160px;
+}
+.bottomListBox .boxList a .Nbox p:nth-child(1) img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.bottomListBox .boxList a .Nbox p:nth-child(2) {
+  border-bottom: 1px solid #dfdfdf;
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: 10px;
+}
+.bottomListBox .boxList a .Nbox .money {
+  width: 100%;
+  margin-top: 10px;
+  overflow: hidden;
+}
+.bottomListBox .boxList a .Nbox .money span {
+  width: 50%;
+  float: left;
+  height: 24px;
+  line-height: 24px;
+  display: block;
+  color: #414141;
+  font-size: 13px;
+}
+.bottomListBox .boxList a .Nbox .money span em {
+  color: red;
+  font-size: 14px;
+}
+.bottomListBox .boxList a .Nbox .phone {
+  margin: 10px 0 20px;
+  width: 100%;
+  overflow: hidden;
+}
+.bottomListBox .boxList a .Nbox .phone .leftPhone {
+  width: 46%;
+  height: 34px;
+  line-height: 34px;
+  color: #333333;
+  background: #f2f2f2;
+  border-radius: 4px;
+  float: left;
+  margin-right: 8%;
+  text-align: center;
+  border: 1px solid #bbbbbb;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+.bottomListBox .boxList a .Nbox .phone .rightL {
+  width: 46%;
+  height: 34px;
+  line-height: 34px;
+  color: #ffffff;
+  background: #d60303;
+  border-radius: 4px;
+  float: left;
+  text-align: center;
+  border: 1px solid #bbbbbb;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+.bottomListBox .bottomPage {
+  margin: 30px auto;
+  overflow: hidden;
+}
+.bottomListBox .searchText {
+  text-align: center;
+  font-size: 14px;
+  color: #969696;
+  height: 20px;
+  line-height: 20px;
+  margin-top: 30px;
+}
+.bottomListBox .searchTwo {
+  text-align: center;
+  font-size: 14px;
+  color: red;
+  height: 20px;
+  line-height: 20px;
+  margin-top: 30px;
+}
+.paging {
+  margin: 30px auto;
+  text-align: center;
+}
+.paging a,
+.paging span {
+  display: inline-block;
+  padding: 3px 8px;
+  margin: 0 4px;
+  border: 1px solid #de0213;
+  color: #de0213;
+}
+.paging span {
+  border: 1px solid #d8d8d8;
+  color: #d8d8d8;
+}
+.paging span.current,
+.paging span.active,
+.paging a:hover {
+  border: 1px solid #de0213;
+  background: #de0213;
+  color: #fff;
+  text-decoration: none;
+}
