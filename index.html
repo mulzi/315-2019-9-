@@ -11,7 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <!-- import JavaScript -->
     <script src="https://unpkg.com/element-ui/lib/index.js"></script>
-    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery-1.10.2.js"></script>
 
 </head>
 
@@ -67,11 +67,59 @@
                 </div>
                 <div class="right">
                     <ul>
-                        <li v-for="(item,index) in indexHeaderMenu" :key="item.id">
-                            <a :href="'http//www.' + item.url" :class="isSelect === item.text ? 'active' : ''">
-                                {{item.text}}
+                        <li>
+                            <a href="" class="active">
+                                重庆火锅
                             </a>
-                            <span class="hot" v-if="item.hot">
+                            <span class="hot">
+                                <img src="./img/hotImg.png" alt="">
+                            </span>
+                        </li>
+                        <li>
+                            <a href="">
+                                重庆火锅
+                            </a>
+                            <span class="hot">
+                                <img src="./img/hotImg.png" alt="">
+                            </span>
+                        </li>
+                        <li>
+                            <a href="">
+                                重庆火锅
+                            </a>
+                            <span class="hot">
+                                <img src="./img/hotImg.png" alt="">
+                            </span>
+                        </li>
+                        <li>
+                            <a href="">
+                                重庆火锅
+                            </a>
+                            <span class="hot">
+                                <img src="./img/hotImg.png" alt="">
+                            </span>
+                        </li>
+                        <li>
+                            <a href="">
+                                重庆火锅
+                            </a>
+                            <span class="hot">
+                                <img src="./img/hotImg.png" alt="">
+                            </span>
+                        </li>
+                        <li>
+                            <a href="">
+                                重庆火锅
+                            </a>
+                            <span class="hot">
+                                <img src="./img/hotImg.png" alt="">
+                            </span>
+                        </li>
+                        <li>
+                            <a href="">
+                                重庆火锅
+                            </a>
+                            <span class="hot">
                                 <img src="./img/hotImg.png" alt="">
                             </span>
                         </li>
@@ -931,7 +979,7 @@
         new Vue({
             el: '#bodyContent',
             data: {
-                isSelect: "重庆火锅",//导航样式选中判断
+           
                 rankingShow: 0,
                 newsUpRun: [ //向上滚动数据
                     {
@@ -1001,62 +1049,6 @@
                     }
                 ],
 
-                indexHeaderMenu: [ //导航菜单数据
-                    {
-                        id: 111,
-                        url: "sss",
-                        text: "重庆火锅",
-                        hot: false
-                    },
-                    {
-                        id: 1121,
-                        url: "sss",
-                        text: "重庆小面",
-                        hot: false
-                    },
-                    {
-                        id: 1321,
-                        url: "sss",
-                        text: "网红街饮",
-                        hot: true
-                    },
-                    {
-                        id: 211,
-                        url: "sss",
-                        text: "无故杂粮",
-                        hot: true
-                    },
-                    {
-                        id: 311,
-                        url: "sss",
-                        text: "重庆火锅",
-                        hot: false
-                    },
-                    {
-                        id: 1311,
-                        url: "sss",
-                        text: "重庆火锅",
-                        hot: false
-                    },
-                    {
-                        id: 141,
-                        url: "sss",
-                        text: "重庆火锅",
-                        hot: false
-                    },
-                    {
-                        id: 151,
-                        url: "sss",
-                        text: "重庆火锅",
-                        hot: false
-                    },
-                    {
-                        id: 161,
-                        url: "sss",
-                        text: "重庆火锅",
-                        hot: false
-                    },
-                ],
                 bannerLeftMenu: [ //banner右边菜单导航数据
                     {
                         class: "icon-shu",
